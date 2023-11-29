@@ -1,0 +1,43 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+.nav-bar{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 50px;
+}
+.barra-de-pesquisa{
+    outline: 0;
+}
+.busca{
+    color: white;
+}
+.nav-principal{
+    background-color: rgb(3, 34, 100);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 30px;
+}
+.nav-conta{
+    display: flex;
+    gap: 10px;
+}
+.link-nav-principal{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.link-nav-principal:visited{
+    color: white;
+}
+.link-nav-principal:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
