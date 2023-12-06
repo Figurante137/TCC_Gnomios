@@ -1,0 +1,11 @@
+.section-grid{
+    display: grid;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 90px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.img-section-grid{
+    width: 100%
+}

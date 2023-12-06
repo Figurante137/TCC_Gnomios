@@ -1,0 +1,42 @@
+.tema{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 90px;
+    background-color: red;
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+    background-color: white;
+  }
+  
+  .carousel-slide {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .img_carrossel{
+    width: 70%;
+    display: block;
+    margin: auto;
+  }
+  
+  .btn_carrossel{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 48px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .btn_carrossel:hover{
+    opacity: 70%;
+  }
+  
+  #prevBtn {
+    left: 10px;
+  }
+  
+  #nextBtn {
+    right: 10px;
+  }
