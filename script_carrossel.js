@@ -1,5 +1,7 @@
 let currentSlide = 0;
-const slideInterval = 3000; // Intervalo em milissegundos (3 segundos)
+const slideInterval = 2000; // Intervalo em milissegundos (3 segundos)
+let slideTimer;
+
 function showSlide(index) {
   const slides = document.querySelectorAll('.carousel-slide');
   
@@ -21,20 +23,41 @@ function showSlide(index) {
   slides[currentSlide].style.display = 'block';
 }
 
+function startSlideTimer() {
+  // Inicia o timer para avançar para o próximo slide automaticamente
+  slideTimer = setInterval(() => {
+    nextSlide();
+  }, slideInterval);
+}
+
+function resetSlideTimer() {
+  // Limpa o timer atual e reinicia
+  clearInterval(slideTimer);
+  startSlideTimer();
+}
+
 function nextSlide() {
   showSlide(currentSlide + 1);
+  resetSlideTimer();
 }
 
 function prevSlide() {
   showSlide(currentSlide - 1);
+  resetSlideTimer();
 }
 
 // Exibe o primeiro slide ao carregar a página
 document.addEventListener('DOMContentLoaded', () => {
   showSlide(currentSlide);
+  startSlideTimer();
 
-  // Configura a função nextSlide para ser chamada automaticamente a cada 3 segundos
-  setInterval(() => {
-    nextSlide();
-  }, slideInterval);
+  // Adiciona o manipulador de eventos mouseenter e mouseleave para resetar o timer
+  const carouselContainer = document.querySelector('.carousel-container');
+  carouselContainer.addEventListener('mouseenter', () => {
+    clearInterval(slideTimer);
+  });
+  
+  carouselContainer.addEventListener('mouseleave', () => {
+    resetSlideTimer();
+  });
 });
