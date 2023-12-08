@@ -1,5 +1,5 @@
 let currentSlide = 0;
-const slideInterval = 2000; // Intervalo em milissegundos (3 segundos)
+const slideInterval = 4000; // Intervalo em milissegundos (3 segundos)
 let slideTimer;
 
 function showSlide(index) {

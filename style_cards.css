@@ -1,17 +1,52 @@
 .titulo-section-card{
-    background-color: rgb(0, 19, 102);
-    color: white;
-    text-align: center;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 10%;
 }
 .section-card{
-    display: flex;
-}
-.card{
-    background-color: white;
     width: 100%;
+    padding: 0 40px;
+}
+.h2{
+    background-color: rgb(0, 19, 102);
+    color: white;
+    text-align: center;
+}
+.card-deck {
     display: flex;
+    flex-wrap: wrap;
+}
+  
+.card {
+    flex: 0 0 50%; /* Exibe dois cards por linha */
     flex-direction: column;
 }
+.section-card-icon{
+    color: black;
+    font-size: 40px;
+}
+.card-body{
+    text-align: center;
+}
+.wrapper-buttons{
+   width: 100%;
+}
+.card-button {
+    margin: 0 auto;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #3498db;
+    transition: background-color 0.3s;
+  }
+  
+  .card-button:hover {
+    background-color: #2980b9;
+  }

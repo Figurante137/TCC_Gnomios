@@ -6,14 +6,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_carrossel.css">
     <link rel="stylesheet" href="style_grid.css">
     <link rel="stylesheet" href="style_cards.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style_footer.css">
+    <link rel="shortcut icon" href="imagem/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <script src="script_carrossel.js" defer></script>
-    <script src="https://kit.fontawesome.com/a38a8d8b8b.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a38a8d8b8b.js" crossorigin="anonymous" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <title>GNOTECH</title>
 </head>
@@ -21,7 +27,7 @@
     <!-- barra de navegação -->
     <nav id="nav-inclusiva">
         <nav class="nav-bar">
-            <img src="imagem/gnomeme.png" alt="" id="logo">
+            <img src="imagem/logo.png" alt="" id="logo">
             <div class="pesquisa">
                 <input type="text" placeholder="Pesquisar" class="barra-de-pesquisa" id="barra_pesquisa">
                 <i class="fa-solid fa-magnifying-glass" id="icon_pesquisa"></i>
@@ -35,56 +41,34 @@
             </nav>
         </nav>
     </nav>
+    <div id="home"></div>
+    <div id="ad"></div>
     <!-- conteudo do primeiro section -->
-    <section class="tema">
-        <h2>Confira os nossos GNOMOS!!!</h2>
         <div class="carousel-container">
             <a href="" class="link-interno-carousel-slide">
                 <div class="carousel-slide">
-                    <img src="imagem/brasil.png" class="img_carrossel">
+                    <img src="imagem/propaganda1.png" class="img_carrossel">
                 </div>
             </a>
             <a href="" class="link-interno-carousel-slide">
                 <div class="carousel-slide">
-                    <img src="imagem/gnodrake.png" class="img_carrossel">
+                    <img src="imagem/propaganda2.png" class="img_carrossel">
                 </div>
             </a>
             <a href="" class="link-interno-carousel-slide">
                 <div class="carousel-slide">
-                    <img src="imagem/gnomio.png" class="img_carrossel">
+                    <img src="imagem/propaganda3.png" class="img_carrossel">
                 </div>
             </a>
             <a href="" class="link-interno-carousel-slide">
                 <div class="carousel-slide">
-                    <img src="imagem/lgbtnomo.png" class="img_carrossel">
+                    <img src="imagem/propaganda4.png" class="img_carrossel">
                 </div>
             </a>
-            <a href="" class="link-interno-carousel-slide">
-                <div class="carousel-slide">
-                    <img src="imagem/gnomiobarbudo.png" class="img_carrossel">
-                </div>
-            </a>
-            <a href="" class="link-interno-carousel-slide">
-                <div class="carousel-slide">
-                    <img src="imagem/preto.png" class="img_carrossel">
-                </div>
-            </a>
-            <a href="" class="link-interno-carousel-slide">
-                <div class="carousel-slide">
-                    <img src="imagem/gotico.png" class="img_carrossel">
-                </div>
-            </a>
-            <a href="" class="link-interno-carousel-slide">
-                <div class="carousel-slide">
-                    <img src="imagem/smurf.png" class="img_carrossel">
-                </div>
-            </a>
-            <i class="fa-solid fa-less-than btn_carrossel" id="prevBtn" onclick="prevSlide()"></i>
-            <i class="fa-solid fa-greater-than btn_carrossel" id="nextBtn" onclick="nextSlide()"></i>
         </div>
-    </section>
     <!-- entrando na segunda section -->
-    <div class="titulo-section-grid">
+    <div id="Populares"></div>
+    <div class="titulo-section-grid" >
         <h2>Gnomos Populares!</h2>
         <section class="section-grid">
             <a href="" class="link-interno-section-grid">
@@ -109,14 +93,147 @@
             </a>
         </section>
     </div>
+    <div id="Disponiveis"></div>
     <!-- entrando na terceira section -->
-    <div class="titulo-section-card v">
-        <h2>Atualmente disponíveis</h2>
-        <section class="section-card">
-            <div class="card">
-
+    <section class="titulo-section-card">
+        <h2 class="h2">Atualmente disponíveis</h2>
+        <!-- carrossel -->
+        <div id="cardCarousel" class="carousel slide section-card" data-ride="carousel">
+            <!-- escondidinho dos cards do carrossel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <!-- junção de 2 cards -->
+                <div class="card-deck">
+                    <!-- card do carrossel -->
+                  <div class="card" id="brasil">
+                    <img src="imagem/brasil.png" class="card-img-top" alt="Card 1">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-weight: 700;">Gnosil</h5>
+                      <p class="card-text" style="font-weight: 700;">R$900,00</p>
+                      <button class="card-button"> Adicionar ao Carrinho</button>
+                    </div>
+                  </div>
+                  <div class="card" id="mandrake">
+                    <img src="imagem/gnodrake.png" class="card-img-top" alt="Card 2">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-weight: 700;">Gnodrake</h5>
+                      <p class="card-text" style="font-weight: 700;">R$400,00</p>
+                      <button class="card-button"> Adicionar ao Carrinho</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-deck">
+                  <div class="card" id="gnomio">
+                    <img src="imagem/gnomio.png" class="card-img-top" alt="Card 3">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: 700;">Gnomio</h5>
+                        <p class="card-text" style="font-weight: 700;">R$100,00</p>
+                        <div class="wrapper-buttons">
+                            <button class="card-button"> Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card" id="smurf">
+                    <img src="imagem/smurf.png" class="card-img-top" alt="Card 4">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-weight: 700;">Gnomurf</h5>
+                      <p class="card-text" style="font-weight: 700;">R$350,00</p>
+                      <button class="card-button"> Adicionar ao Carrinho</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-deck">
+                  <div class="card" id="arcoiris">
+                    <img src="imagem/lgbtnomo.png" class="card-img-top" alt="Card 5">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: 700;">Gnoarco-íris</h5>
+                        <p class="card-text" style="font-weight: 700;">R$100,00</p>
+                        <div class="wrapper-buttons">
+                            <button class="card-button"> Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card" id="gotico">
+                    <img src="imagem/gotico.png" class="card-img-top" alt="Card 6">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-weight: 700;">Gnotico</h5>
+                      <p class="card-text" style="font-weight: 700;">R$350,00</p>
+                      <button class="card-button"> Adicionar ao Carrinho</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-deck">
+                  <div class="card" id="gnomiobarbudo">
+                    <img src="imagem/gnomiobarbudo.png" class="card-img-top" alt="Card 7">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: 700;">Gnobarba</h5>
+                        <p class="card-text" style="font-weight: 700;">R$100,00</p>
+                        <div class="wrapper-buttons">
+                            <button class="card-button"> Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card" id="noturno">
+                    <img src="imagem/preto.png" class="card-img-top" alt="Card 8">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-weight: 700;">Gnoturno</h5>
+                      <p class="card-text" style="font-weight: 700;">R$350,00</p>
+                      <button class="card-button"> Adicionar ao Carrinho</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-    </div>
+            <a class="carousel-control-prev" href="#cardCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true">
+                    <i class="fa-solid fa-less-than section-card-icon left"></i>
+                </span>
+              </a>
+              <a class="carousel-control-next" href="#cardCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true">
+                    <i class="fa-solid fa-greater-than section-card-icon"></i>
+                </span>
+              </a>
+        </div>
+    </section>
+    <!-- footer parte 1 -->
+    <footer class="footer1">
+        <div class="footer-container">
+          <div class="contact-info">
+            <h3>Entre em Contato</h3>
+            <p>Email: contato@exemplo.com</p>
+            <p>Telefone: (11) 1234-5678</p>
+          </div>
+          
+          <div class="quick-links">
+            <h3>Links Rápidos</h3>
+            <ul>
+              <li><a href="#home">Início</a></li>
+              <li><a href="#ad">Patriocinadores</a></li>
+              <li><a href="#Populares">Populares</a></li>
+              <li><a href="#Disponiveis">Disponíveis</a></li>
+            </ul>
+          </div>
+          
+          <div class="external-links">
+            <h3>Interaja</h3>
+            <ul class="lista-footer">
+              <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    <!-- footer parte 2 -->
+    <footer class="footer2">
+        <p>&copy; 2023 Gnotech. Todos os direitos reservados.</p>
+      </footer>
     </body>
 </html>
