@@ -15,9 +15,7 @@
     display: flex;
     flex-wrap: wrap;
 }
-  
 .card {
-    flex: 0 0 50%; /* Exibe dois cards por linha */
     flex-direction: column;
 }
 .section-card-icon{

@@ -2,9 +2,10 @@
     display: flex;
     width: 80%;
     margin: 0 auto;
-    justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 90px;
+    gap: 0;
 }
 .limitador{
-    width: 30%;
+    width: 33%;
 }
