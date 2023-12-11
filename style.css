@@ -2,10 +2,15 @@
     font-family: 'Nunito', sans-serif;
 }
 body{
-    background-color: rgba(209, 209, 209, 0.699)
+    background-color: #f5f5f5;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que a altura da viewport seja coberta */
+  }
 .v{
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(255, 230, 0);
 }
 /* barra de navegaçãp */
 #nav-inclusiva{
@@ -71,4 +76,3 @@ body{
     cursor: pointer;
     opacity: 80%;
 }
-/* conteudo do site */

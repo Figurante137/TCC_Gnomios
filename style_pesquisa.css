@@ -1,0 +1,10 @@
+#area_de_pesquisa{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.limitador{
+    width: 30%;
+}
