@@ -12,12 +12,12 @@ pesquisa.addEventListener("input", function(){
 cart.addEventListener("click", function(){
     conteudo.classList.add("desliga")
     fot.classList.add("desliga")
-    area_pesquisa.classList.add("desliga")
     grupocart.classList.remove("desliga")
+    area_pesquisa.style.display = "none"
 })
 home.addEventListener("click", function(){
     conteudo.classList.remove("desliga")
     fot.classList.remove("desliga")
-    area_pesquisa.classList.add("desliga")
     grupocart.classList.add("desliga")
+    area_pesquisa.style.display = "none" 
 })

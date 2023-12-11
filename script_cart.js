@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const cartTotal = document.getElementById('cart-total');
     const checkoutButton = document.querySelector('.checkout-button');
     const cart = [];
-  
     addToCartButtons.forEach(button => {
       button.addEventListener('click', addToCart);
     });
