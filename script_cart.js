@@ -43,11 +43,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     function checkout() {
+      if(cart.length > 0){
       alert('Compra realizada com sucesso!');
       cart.length = 0; // Limpar o carrinho
       updateCart(); // Atualizar o carrinho após a compra
-    }
-    if(cart.length === 0){
-      checkoutButton.style.display = "none";
+      }
+      else{
+        alert('Nenhum item no carrinho');
+      }
     }
   });
