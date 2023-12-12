@@ -16,7 +16,9 @@
     flex-wrap: nowrap;
 }
 .card {
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 .section-card-icon{
     color: black;
@@ -24,6 +26,9 @@
 }
 .card-body{
     text-align: center;
+}
+.card-text{
+    font-size: 15px;
 }
 .wrapper-buttons{
    width: 100%;
