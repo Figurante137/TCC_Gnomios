@@ -2,7 +2,8 @@
     font-family: 'Nunito', sans-serif;
 }
 body{
-    background-color: #f5f5f5;
+    backdrop-filter: saturate(18%);
+    background-color: #cffafe;
 }
 body {
     display: flex;

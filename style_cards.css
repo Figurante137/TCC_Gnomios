@@ -13,7 +13,7 @@
 }
 .card-deck {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .card {
     flex-direction: column;
