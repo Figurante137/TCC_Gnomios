@@ -4,11 +4,11 @@
     padding: 20px;
     background-color: #fff;
     margin-top: 20px;
-    width: fit-content;
+    width: 600px;
     margin: 0 auto;
     margin-top: 100px;
   }
-/* 
+
   ul {
     list-style: none;
     padding: 0;
@@ -16,7 +16,7 @@
 
   li {
     margin-bottom: 10px;
-  } */
+  }
 
   #cart-total {
     font-weight: bold;
@@ -35,4 +35,9 @@
 
   .checkout-button:hover {
     background-color: #333;
+  }
+  @media(max-width: 700px){
+    .cart{
+      width: 350px;
+    }
   }
