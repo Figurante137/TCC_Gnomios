@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // fariaveis
     const addToCartButtons = document.querySelectorAll('.add-to-cart');
     const cartItemsContainer = document.getElementById('cart-items');
     const cartTotal = document.getElementById('cart-total');
