@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
         updateCart();
       }
     }
-  
     function updateCart() {
       cartItemsContainer.innerHTML = '';
       let total = 0;
@@ -44,13 +43,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     function checkout() {
-      if(cart.length > 0){
       alert('Compra realizada com sucesso!');
       cart.length = 0; // Limpar o carrinho
       updateCart(); // Atualizar o carrinho após a compra
-      }
-      else{
-        alert('Nenhum item no carrinho');
-      }
+    }
+    if(cart.length === 0){
+      checkoutButton.style.display = "none";
     }
   });

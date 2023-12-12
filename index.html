@@ -31,7 +31,7 @@
     </style>
     <title>GNOTECH</title>
 </head>
-<body style="position: relative;"> 
+<body> 
     <!-- barra de navegação -->
     <nav id="nav-inclusiva">
         <nav class="nav-bar">
@@ -44,282 +44,283 @@
         </nav>
         <nav class="nav-principal ">
             <nav class="nav-conta">
-                <a href="#" class="link-nav-principal">Cadastre-se</a>
-                <a href="#" class="link-nav-principal">Login</a>
+                <a href="cadastro.html" class="link-nav-principal">Cadastre-se</a>
+                <a href="login.html" class="link-nav-principal">Login</a>
             </nav>
         </nav>
     </nav>
-    <div class="conteudo-inicial" id="conteudo-inicial">
-      <div id="home"></div>
-      <div id="ad"></div>
-      <!-- conteudo do primeiro section -->
-          <div class="carousel-container">
-              <a href="" class="link-interno-carousel-slide">
-                  <div class="carousel-slide">
-                      <img src="imagem/propaganda1.png" class="img_carrossel">
-                  </div>
-              </a>
-              <a href="" class="link-interno-carousel-slide">
-                  <div class="carousel-slide">
-                      <img src="imagem/propaganda2.png" class="img_carrossel">
-                  </div>
-              </a>
-              <a href="" class="link-interno-carousel-slide">
-                  <div class="carousel-slide">
-                      <img src="imagem/propaganda3.png" class="img_carrossel">
-                  </div>
-              </a>
-              <a href="" class="link-interno-carousel-slide">
-                  <div class="carousel-slide">
-                      <img src="imagem/propaganda4.png" class="img_carrossel">
-                  </div>
-              </a>
-          </div>
-      <!-- entrando na segunda section -->
-      <div id="Populares"></div>
-      <div class="titulo-section-grid" >
-          <h2>Gnomos Populares!</h2>
-          <section class="section-grid">
-              <a href="" class="link-interno-section-grid">
-                  <div class="bloco-section-grid">
-                      <img src="imagem/smurf.png" alt="" class="img-section-grid">
-                  </div>
-              </a>
-              <a href="" class="link-interno-section-grid">
-                  <div class="bloco-section-grid">
-                      <img src="imagem/gnomio.png" alt="" class="img-section-grid">
-                  </div>
-              </a>
-              <a href="" class="link-interno-section-grid">
-                  <div class="bloco-section-grid">
-                      <img src="imagem/gnodrake.png" alt="" class="img-section-grid">
-                  </div>
-              </a>
-              <a href="" class="link-interno-section-grid">
-                  <div class="bloco-section-grid">
-                      <img src="imagem/brasil.png" alt="" class="img-section-grid">
-                  </div>
-              </a>
-          </section>
-      </div>
-      <div id="Disponiveis"></div>
-      <!-- entrando na terceira section -->
-      <section class="titulo-section-card">
-          <h2 class="h2">Atualmente disponíveis</h2>
-          <!-- carrossel -->
-          <div id="cardCarousel" class="carousel slide section-card" data-ride="carousel">
-              <!-- escondidinho dos cards do carrossel -->
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <!-- junção de 2 cards -->
-                  <div class="card-deck">
-                      <!-- card do carrossel -->
-                    <div class="card product" id="brasil" data-name="Gnosil" data-price="900.00">
-                      <img src="imagem/brasil.png" class="card-img-top" alt="Card 1">
-                      <div class="card-body">
-                        <h5 class="card-title" style="font-weight: 700;">Gnosil</h5>
-                        <p class="card-text" style="font-weight: 700;">R$900,00</p>
-                        <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
-                      </div>
+    <div id="main-content">
+      <div class="conteudo-inicial" id="conteudo-inicial">
+        <div id="home"></div>
+        <div id="ad"></div>
+        <!-- conteudo do primeiro section -->
+            <div class="carousel-container">
+                <a href="" class="link-interno-carousel-slide">
+                    <div class="carousel-slide">
+                        <img src="imagem/propaganda1.png" class="img_carrossel">
                     </div>
-                    <div class="card" id="mandrake" data-name="Gnodrake" data-price="400.00">
-                      <img src="imagem/gnodrake.png" class="card-img-top" alt="Card 2">
-                      <div class="card-body">
-                        <h5 class="card-title" style="font-weight: 700;">Gnodrake</h5>
-                        <p class="card-text" style="font-weight: 700;">R$400,00</p>
-                        <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="card-deck">
-                    <div class="card" id="gnomio" data-name="Gnomio" data-price="100.00">
-                      <img src="imagem/gnomio.png" class="card-img-top" alt="Card 3">
-                      <div class="card-body">
-                          <h5 class="card-title" style="font-weight: 700;">Gnomio</h5>
-                          <p class="card-text" style="font-weight: 700;">R$100,00</p>
-                          <div class="wrapper-buttons">
-                              <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="card" id="smurf" data-name="Gnomurf" data-price="350.00">
-                      <img src="imagem/smurf.png" class="card-img-top" alt="Card 4">
-                      <div class="card-body">
-                        <h5 class="card-title" style="font-weight: 700;">Gnomurf</h5>
-                        <p class="card-text" style="font-weight: 700;">R$350,00</p>
-                        <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="card-deck">
-                    <div class="card" id="arcoiris" data-name="Gnoíris" data-price="100.00">
-                      <img src="imagem/lgbtnomo.png" class="card-img-top" alt="Card 5">
-                      <div class="card-body">
-                          <h5 class="card-title" style="font-weight: 700;">Gnoíris</h5>
-                          <p class="card-text" style="font-weight: 700;">R$100,00</p>
-                          <div class="wrapper-buttons">
-                              <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="card" id="gotico" data-name="Gnotico" data-price="350.00">
-                      <img src="imagem/gotico.png" class="card-img-top" alt="Card 6">
-                      <div class="card-body">
-                        <h5 class="card-title" style="font-weight: 700;">Gnotico</h5>
-                        <p class="card-text" style="font-weight: 700;">R$350,00</p>
-                        <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="card-deck">
-                    <div class="card" id="gnomiobarbudo" data-name="Gnobarba" data-price="100.00">
-                      <img src="imagem/gnomiobarbudo.png" class="card-img-top" alt="Card 7">
-                      <div class="card-body">
-                          <h5 class="card-title" style="font-weight: 700;">Gnobarba</h5>
-                          <p class="card-text" style="font-weight: 700;">R$100,00</p>
-                          <div class="wrapper-buttons">
-                              <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="card" id="noturno" data-name="Gnoturno" data-price="350.00">
-                      <img src="imagem/preto.png" class="card-img-top" alt="Card 8">
-                      <div class="card-body">
-                        <h5 class="card-title" style="font-weight: 700;">Gnoturno</h5>
-                        <p class="card-text" style="font-weight: 700;">R$350,00</p>
-                        <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#cardCarousel" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true">
-                      <i class="fa-solid fa-less-than section-card-icon left"></i>
-                  </span>
                 </a>
-                <a class="carousel-control-next" href="#cardCarousel" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true">
-                      <i class="fa-solid fa-greater-than section-card-icon"></i>
-                  </span>
+                <a href="" class="link-interno-carousel-slide">
+                    <div class="carousel-slide">
+                        <img src="imagem/propaganda2.png" class="img_carrossel">
+                    </div>
                 </a>
-          </div>
-      </section>
-    </div>
-    <!-- carrinho escondido -->
-    <div class="o-cart desliga" id="o-cart">
-      <div class="cart">
-        <h2>Carrinho de Compras</h2>
-        <ul id="cart-items"></ul>
-        <p>Total: <span id="cart-total">R$ 0.00</span></p>
-        <button class="checkout-button">Comprar</button>
+                <a href="" class="link-interno-carousel-slide">
+                    <div class="carousel-slide">
+                        <img src="imagem/propaganda3.png" class="img_carrossel">
+                    </div>
+                </a>
+                <a href="" class="link-interno-carousel-slide">
+                    <div class="carousel-slide">
+                        <img src="imagem/propaganda4.png" class="img_carrossel">
+                    </div>
+                </a>
+            </div>
+        <!-- entrando na segunda section -->
+        <div id="Populares"></div>
+        <div class="titulo-section-grid" >
+            <h2>Gnomos Populares!</h2>
+            <section class="section-grid">
+                <a href="" class="link-interno-section-grid">
+                    <div class="bloco-section-grid">
+                        <img src="imagem/smurf.png" alt="" class="img-section-grid">
+                    </div>
+                </a>
+                <a href="" class="link-interno-section-grid">
+                    <div class="bloco-section-grid">
+                        <img src="imagem/gnomio.png" alt="" class="img-section-grid">
+                    </div>
+                </a>
+                <a href="" class="link-interno-section-grid">
+                    <div class="bloco-section-grid">
+                        <img src="imagem/gnodrake.png" alt="" class="img-section-grid">
+                    </div>
+                </a>
+                <a href="" class="link-interno-section-grid">
+                    <div class="bloco-section-grid">
+                        <img src="imagem/brasil.png" alt="" class="img-section-grid">
+                    </div>
+                </a>
+            </section>
+        </div>
+        <div id="Disponiveis"></div>
+        <!-- entrando na terceira section -->
+        <section class="titulo-section-card">
+            <h2 class="h2">Atualmente disponíveis</h2>
+            <!-- carrossel -->
+            <div id="cardCarousel" class="carousel slide section-card" data-ride="carousel">
+                <!-- escondidinho dos cards do carrossel -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <!-- junção de 2 cards -->
+                    <div class="card-deck">
+                        <!-- card do carrossel -->
+                      <div class="card product" id="brasil" data-name="Gnosil" data-price="900.00">
+                        <img src="imagem/brasil.png" class="card-img-top" alt="Card 1">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-weight: 700;">Gnosil</h5>
+                          <p class="card-text" style="font-weight: 700;">R$900,00</p>
+                          <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
+                        </div>
+                      </div>
+                      <div class="card" id="mandrake" data-name="Gnodrake" data-price="400.00">
+                        <img src="imagem/gnodrake.png" class="card-img-top" alt="Card 2">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-weight: 700;">Gnodrake</h5>
+                          <p class="card-text" style="font-weight: 700;">R$400,00</p>
+                          <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card-deck">
+                      <div class="card" id="gnomio" data-name="Gnomio" data-price="100.00">
+                        <img src="imagem/gnomio.png" class="card-img-top" alt="Card 3">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: 700;">Gnomio</h5>
+                            <p class="card-text" style="font-weight: 700;">R$100,00</p>
+                            <div class="wrapper-buttons">
+                                <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card" id="smurf" data-name="Gnomurf" data-price="350.00">
+                        <img src="imagem/smurf.png" class="card-img-top" alt="Card 4">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-weight: 700;">Gnomurf</h5>
+                          <p class="card-text" style="font-weight: 700;">R$350,00</p>
+                          <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card-deck">
+                      <div class="card" id="arcoiris" data-name="Gnoíris" data-price="100.00">
+                        <img src="imagem/lgbtnomo.png" class="card-img-top" alt="Card 5">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: 700;">Gnoíris</h5>
+                            <p class="card-text" style="font-weight: 700;">R$100,00</p>
+                            <div class="wrapper-buttons">
+                                <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card" id="gotico" data-name="Gnotico" data-price="350.00">
+                        <img src="imagem/gotico.png" class="card-img-top" alt="Card 6">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-weight: 700;">Gnotico</h5>
+                          <p class="card-text" style="font-weight: 700;">R$350,00</p>
+                          <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card-deck">
+                      <div class="card" id="gnomiobarbudo" data-name="Gnobarba" data-price="100.00">
+                        <img src="imagem/gnomiobarbudo.png" class="card-img-top" alt="Card 7">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: 700;">Gnobarba</h5>
+                            <p class="card-text" style="font-weight: 700;">R$100,00</p>
+                            <div class="wrapper-buttons">
+                                <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card" id="noturno" data-name="Gnoturno" data-price="350.00">
+                        <img src="imagem/preto.png" class="card-img-top" alt="Card 8">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-weight: 700;">Gnoturno</h5>
+                          <p class="card-text" style="font-weight: 700;">R$350,00</p>
+                          <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#cardCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true">
+                        <i class="fa-solid fa-less-than section-card-icon left"></i>
+                    </span>
+                  </a>
+                  <a class="carousel-control-next" href="#cardCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true">
+                        <i class="fa-solid fa-greater-than section-card-icon"></i>
+                    </span>
+                  </a>
+            </div>
+        </section>
       </div>
-    </div>
-    <!-- interface de pesquisa escondido -->
-    <div id="area_de_pesquisa" style="display: none;">
-      <div class="limitador">
-        <div class="card" id="gnomio" data-name="Gnomio" data-price="100.00">
-          <img src="imagem/gnomio.png" class="card-img-top" alt="Card 3">
-          <div class="card-body">
-              <h5 class="card-title" style="font-weight: 700;">Gnomio</h5>
-              <p class="card-text" style="font-weight: 700;">R$100,00</p>
-              <div class="wrapper-buttons">
-                  <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
-              </div>
+      <!-- carrinho escondido -->
+      <div class="o-cart desliga" id="o-cart">
+        <div class="cart">
+          <h2>Carrinho de Compras</h2>
+          <ul id="cart-items"></ul>
+          <p>Total: <span id="cart-total">R$ 0.00</span></p>
+          <button class="checkout-button">Comprar</button>
+        </div>
+      </div>
+      <!-- interface de pesquisa escondido -->
+      <div id="area_de_pesquisa" style="display: none;">
+        <div class="limitador">
+          <div class="card" id="gnomio" data-name="Gnomio" data-price="100.00">
+            <img src="imagem/gnomio.png" class="card-img-top" alt="Card 3">
+            <div class="card-body">
+                <h5 class="card-title" style="font-weight: 700;">Gnomio</h5>
+                <p class="card-text" style="font-weight: 700;">R$100,00</p>
+                <div class="wrapper-buttons">
+                    <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="limitador">
+          <div class="card product" id="brasil" data-name="Gnosil" data-price="900.00">
+            <img src="imagem/brasil.png" class="card-img-top" alt="Card 1">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: 700;">Gnosil</h5>
+              <p class="card-text" style="font-weight: 700;">R$900,00</p>
+              <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+        <div class="limitador">
+          <div class="card" id="mandrake" data-name="Gnodrake" data-price="400.00">
+            <img src="imagem/gnodrake.png" class="card-img-top" alt="Card 2">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: 700;">Gnodrake</h5>
+              <p class="card-text" style="font-weight: 700;">R$400,00</p>
+              <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+        <div class="limitador">
+          <div class="card" id="gotico" data-name="Gnotico" data-price="350.00">
+            <img src="imagem/gotico.png" class="card-img-top" alt="Card 6">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: 700;">Gnotico</h5>
+              <p class="card-text" style="font-weight: 700;">R$350,00</p>
+              <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+        <div class="limitador">
+          <div class="card" id="noturno" data-name="Gnoturno" data-price="350.00">
+            <img src="imagem/preto.png" class="card-img-top" alt="Card 8">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: 700;">Gnoturno</h5>
+              <p class="card-text" style="font-weight: 700;">R$350,00</p>
+              <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+        <div class="limitador">
+          <div class="card" id="arcoiris" data-name="Gnoíris" data-price="100.00">
+            <img src="imagem/lgbtnomo.png" class="card-img-top" alt="Card 5">
+            <div class="card-body">
+                <h5 class="card-title" style="font-weight: 700;">Gnoíris</h5>
+                <p class="card-text" style="font-weight: 700;">R$100,00</p>
+                <div class="wrapper-buttons">
+                    <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="limitador">
+          <div class="card" id="gnomiobarbudo" data-name="Gnobarba" data-price="100.00">
+            <img src="imagem/gnomiobarbudo.png" class="card-img-top" alt="Card 7">
+            <div class="card-body">
+                <h5 class="card-title" style="font-weight: 700;">Gnobarba</h5>
+                <p class="card-text" style="font-weight: 700;">R$100,00</p>
+                <div class="wrapper-buttons">
+                    <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="limitador">
+          <div class="card" id="smurf" data-name="Gnomurf" data-price="350.00">
+            <img src="imagem/smurf.png" class="card-img-top" alt="Card 4">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: 700;">Gnomurf</h5>
+              <p class="card-text" style="font-weight: 700;">R$350,00</p>
+              <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="limitador">
-        <div class="card product" id="brasil" data-name="Gnosil" data-price="900.00">
-          <img src="imagem/brasil.png" class="card-img-top" alt="Card 1">
-          <div class="card-body">
-            <h5 class="card-title" style="font-weight: 700;">Gnosil</h5>
-            <p class="card-text" style="font-weight: 700;">R$900,00</p>
-            <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
-          </div>
-        </div>
-      </div>
-      <div class="limitador">
-        <div class="card" id="mandrake" data-name="Gnodrake" data-price="400.00">
-          <img src="imagem/gnodrake.png" class="card-img-top" alt="Card 2">
-          <div class="card-body">
-            <h5 class="card-title" style="font-weight: 700;">Gnodrake</h5>
-            <p class="card-text" style="font-weight: 700;">R$400,00</p>
-            <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
-          </div>
-        </div>
-      </div>
-      <div class="limitador">
-        <div class="card" id="gotico" data-name="Gnotico" data-price="350.00">
-          <img src="imagem/gotico.png" class="card-img-top" alt="Card 6">
-          <div class="card-body">
-            <h5 class="card-title" style="font-weight: 700;">Gnotico</h5>
-            <p class="card-text" style="font-weight: 700;">R$350,00</p>
-            <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
-          </div>
-        </div>
-      </div>
-      <div class="limitador">
-        <div class="card" id="noturno" data-name="Gnoturno" data-price="350.00">
-          <img src="imagem/preto.png" class="card-img-top" alt="Card 8">
-          <div class="card-body">
-            <h5 class="card-title" style="font-weight: 700;">Gnoturno</h5>
-            <p class="card-text" style="font-weight: 700;">R$350,00</p>
-            <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
-          </div>
-        </div>
-      </div>
-      <div class="limitador">
-        <div class="card" id="arcoiris" data-name="Gnoíris" data-price="100.00">
-          <img src="imagem/lgbtnomo.png" class="card-img-top" alt="Card 5">
-          <div class="card-body">
-              <h5 class="card-title" style="font-weight: 700;">Gnoíris</h5>
-              <p class="card-text" style="font-weight: 700;">R$100,00</p>
-              <div class="wrapper-buttons">
-                  <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
-              </div>
-          </div>
-        </div>
-      </div>
-      <div class="limitador">
-        <div class="card" id="gnomiobarbudo" data-name="Gnobarba" data-price="100.00">
-          <img src="imagem/gnomiobarbudo.png" class="card-img-top" alt="Card 7">
-          <div class="card-body">
-              <h5 class="card-title" style="font-weight: 700;">Gnobarba</h5>
-              <p class="card-text" style="font-weight: 700;">R$100,00</p>
-              <div class="wrapper-buttons">
-                  <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
-              </div>
-          </div>
-        </div>
-      </div>
-      <div class="limitador">
-        <div class="card" id="smurf" data-name="Gnomurf" data-price="350.00">
-          <img src="imagem/smurf.png" class="card-img-top" alt="Card 4">
-          <div class="card-body">
-            <h5 class="card-title" style="font-weight: 700;">Gnomurf</h5>
-            <p class="card-text" style="font-weight: 700;">R$350,00</p>
-            <button class="card-button add-to-cart"> Adicionar ao Carrinho</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="o-footer" id="o-footer">
-      <!-- footer parte 1 -->
-      <footer class="footer1">
+      <footer class="o-footer" id="o-footer">
+        <!-- footer parte 1 -->
+        <footer class="footer1">
           <div class="footer-container">
             <div class="contact-info">
               <h3>Entre em Contato</h3>
               <p>Email: contato@gmail.com</p>
               <p>Telefone: (11) 1234-5678</p>
             </div>
-      
+            
             <div class="quick-links">
               <h3>Rapido acesso</h3>
               <ul>
@@ -329,7 +330,7 @@
                 <li><a href="#Disponiveis">Disponíveis</a></li>
               </ul>
             </div>
-      
+            
             <div class="external-links">
               <h3 style="text-align: center;">Siga-nos</h3>
               <ul class="lista-footer">
@@ -340,10 +341,11 @@
             </div>
           </div>
         </footer>
-      <!-- footer parte 2 -->
-      <footer class="footer2">
+        <!-- footer parte 2 -->
+        <footer class="footer2">
           <p>&copy; 2023 Gnotech. Todos os direitos reservados.</p>
         </footer>
-    </footer>
+      </footer>
+    </div>
     </body>
-</html>
+    </html>

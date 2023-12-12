@@ -1,11 +1,8 @@
 *{
     font-family: 'Nunito', sans-serif;
 }
-body{
-    backdrop-filter: saturate(18%);
-    background-color: #cffafe;
-}
 body {
+    background-color: #cffafe;
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Garante que a altura da viewport seja coberta */
@@ -77,3 +74,8 @@ body {
     cursor: pointer;
     opacity: 80%;
 }
+/* conteudo do site */
+#main-content {
+    backdrop-filter: saturate(18%);
+    flex: 1;
+  }

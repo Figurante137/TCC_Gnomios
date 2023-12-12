@@ -31,4 +31,3 @@ home.addEventListener("click", function(){
     pesquisa.value = ''
     grupocart.classList.add("desliga")
 })
-// window.
