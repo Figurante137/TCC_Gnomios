@@ -9,3 +9,11 @@
 .limitador{
     width: 33%;
 }
+@media(max-width: 499px){
+    .limitador{
+        width: 50%;
+    }
+    .card-button p{
+        font-size: 10px;
+    }
+}
