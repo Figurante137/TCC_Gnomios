@@ -79,3 +79,14 @@ body {
     backdrop-filter: saturate(18%);
     flex: 1;
   }
+@media(max-width: 499px){
+    #icon_pesquisa{
+        display: none;
+    }
+    #barra_pesquisa{
+        width: 100%;
+    }
+    .pesquisa{
+        width: 60%;
+    }
+}
